@@ -31,6 +31,14 @@ export const projects = [
   },
 ]
 
+export const stats = [
+  { label: 'Projects designed', value: '3' },
+  { label: 'Years studying CS', value: '3rd yr' },
+  { label: 'Based in', value: 'Cabuyao' },
+]
+
+export const stack = ['React', 'Tailwind CSS', 'Figma', 'JavaScript', 'Java', 'SQL']
+
 export const caseStudies = [
   {
     title: 'Designing Lumen: from spreadsheet chaos to calm',
@@ -38,6 +46,11 @@ export const caseStudies = [
       'How research, flows, and a strict type scale turned raw financial anxiety into a product people open daily.',
     focus: 'Research · Flows · Design system',
     readTime: '6 min read',
+    highlights: [
+      'Interviewed 8 students about how they actually track spending.',
+      'Cut the logging flow from 5 taps to 2 with a single sheet.',
+      'Locked a 6-step type scale so every screen stays readable at night.',
+    ],
   },
   {
     title: 'Kapehan: an ordering flow that cut checkout time in half',
@@ -45,6 +58,11 @@ export const caseStudies = [
       'Mapping the real counter queue into a digital flow — and what removing one screen did to conversion.',
     focus: 'UX flows · Prototyping · Testing',
     readTime: '4 min read',
+    highlights: [
+      'Mapped the physical counter queue before touching any UI.',
+      'Removed the review screen — order confirmation moved inline.',
+      'Tested with 5 regulars; checkout time dropped by half.',
+    ],
   },
   {
     title: 'Building a dark palette that never strains the eyes',
@@ -52,6 +70,11 @@ export const caseStudies = [
       'Contrast, elevation, and cool-tone purples: the rules behind every surface in this very portfolio.',
     focus: 'Visual design · Accessibility',
     readTime: '5 min read',
+    highlights: [
+      'Elevation by surface tint instead of shadows, so depth survives dark mode.',
+      'Every text pairing checked against WCAG AA contrast.',
+      'One accent hue, three tints — the palette this portfolio runs on.',
+    ],
   },
 ]
 

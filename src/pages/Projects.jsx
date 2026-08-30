@@ -23,7 +23,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="border-t border-white/5 bg-ink/40">
+      <section className="border-t border-line bg-surface-soft/60">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading
             eyebrow="Case studies"

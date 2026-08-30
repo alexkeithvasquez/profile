@@ -26,11 +26,11 @@ const icons = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-ink">
+    <footer className="border-t border-line bg-surface">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <p className="font-display text-xl font-semibold text-white">
+            <p className="font-display text-xl font-semibold text-title">
               alex<span className="text-violet">.kv</span>
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-mist">
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mist/60">Contact</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mist">Contact</p>
             <a
               href={`mailto:${email}`}
               className="mt-4 inline-block text-sm text-frost transition-colors duration-300 hover:text-lilac"
@@ -49,17 +49,17 @@ export default function Footer() {
             </a>
             <p className="mt-2 text-sm text-mist">Cabuyao, Laguna, Philippines</p>
             <div className="mt-5 flex flex-col gap-2 text-sm">
-              <Link to="/contact" className="w-fit text-mist transition-colors duration-300 hover:text-white">
+              <Link to="/contact" className="w-fit text-mist transition-colors duration-300 hover:text-title">
                 Work with me
               </Link>
-              <Link to="/projects" className="w-fit text-mist transition-colors duration-300 hover:text-white">
+              <Link to="/projects" className="w-fit text-mist transition-colors duration-300 hover:text-title">
                 See my work
               </Link>
             </div>
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mist/60">Socials</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mist">Socials</p>
             <div className="mt-4 flex gap-3">
               {socials.map((social) => (
                 <a
@@ -68,7 +68,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={social.label}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-mist transition-all duration-300 hover:-translate-y-1 hover:border-violet/50 hover:text-white hover:shadow-lg hover:shadow-violet/20"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-line text-mist transition-all duration-300 hover:-translate-y-1 hover:border-violet/50 hover:text-title hover:shadow-lg hover:shadow-violet/20"
                 >
                   {icons[social.label]}
                 </a>
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/5 pt-6 text-xs text-mist/60 sm:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-line pt-6 text-xs text-mist sm:flex-row">
           <p>© {new Date().getFullYear()} Alex Keith Vasquez. All rights reserved.</p>
           <p>Designed & built by Alex — React, Vite & Tailwind.</p>
         </div>
