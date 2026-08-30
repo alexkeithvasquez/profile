@@ -26,9 +26,9 @@ export default function About() {
             <Reveal delay={0.1}>
               <div className="space-y-5 leading-relaxed text-mist">
                 <p>
-                  Hi — I'm <span className="font-medium text-white">Alex Keith Vasquez</span>, a{' '}
+                  Hi — I'm <span className="font-medium text-title">Alex Keith Vasquez</span>, a{' '}
                   {age}-year-old product designer and 3rd year Computer Science student at the{' '}
-                  <span className="font-medium text-white">University of Cabuyao</span>.
+                  <span className="font-medium text-title">University of Cabuyao</span>.
                 </p>
                 <p>
                   I started with code — Java, SQL, and C# — and somewhere along the way fell in
@@ -53,10 +53,10 @@ export default function About() {
                 {facts.map((fact) => (
                   <div
                     key={fact.label}
-                    className="rounded-2xl border border-white/5 bg-ink p-5 transition-colors duration-300 hover:border-violet/40"
+                    className="rounded-2xl border border-line bg-surface p-5 transition-colors duration-300 hover:border-violet/40"
                   >
-                    <p className="text-xs uppercase tracking-widest text-mist/60">{fact.label}</p>
-                    <p className="mt-2 text-sm font-medium text-white">{fact.value}</p>
+                    <p className="text-xs uppercase tracking-widest text-mist">{fact.label}</p>
+                    <p className="mt-2 text-sm font-medium text-title">{fact.value}</p>
                   </div>
                 ))}
                 <div className="col-span-2 rounded-2xl border border-violet/20 bg-plum/60 p-5">
@@ -71,7 +71,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="border-y border-white/5 bg-ink/40">
+      <section className="border-y border-line bg-surface-soft/60">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading
             eyebrow="Skills"
@@ -82,10 +82,10 @@ export default function About() {
             {skills.map((skill, i) => (
               <Reveal key={skill.name} delay={i * 0.06}>
                 <div className="flex items-baseline justify-between">
-                  <p className="font-display font-semibold text-white">{skill.name}</p>
-                  <p className="text-xs text-mist/70">{skill.detail}</p>
+                  <p className="font-display font-semibold text-title">{skill.name}</p>
+                  <p className="text-xs text-mist">{skill.detail}</p>
                 </div>
-                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/5">
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-surface-soft">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.percent}%` }}
@@ -115,12 +115,12 @@ export default function About() {
                 <div className="flex flex-col items-center">
                   <span className="flex h-3 w-3 shrink-0 translate-y-1.5 rounded-full bg-violet shadow-lg shadow-violet/50" />
                   {i < timeline.length - 1 && (
-                    <span className="mt-2 w-px flex-1 bg-gradient-to-b from-violet/40 to-white/5" />
+                    <span className="mt-2 w-px flex-1 bg-gradient-to-b from-violet/40 to-line" />
                   )}
                 </div>
-                <div className="flex-1 rounded-2xl border border-white/5 bg-ink/60 p-6 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-violet/40">
+                <div className="flex-1 rounded-2xl border border-line bg-surface/70 p-6 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-violet/40">
                   <p className="font-display text-sm font-semibold text-lilac">{step.year}</p>
-                  <h3 className="mt-1 font-display text-lg font-semibold text-white">{step.title}</h3>
+                  <h3 className="mt-1 font-display text-lg font-semibold text-title">{step.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-mist">{step.body}</p>
                 </div>
               </div>
